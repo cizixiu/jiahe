@@ -1,1 +1,665 @@
-加贺顶针
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+        <!-- Use title if it's in the page YAML frontmatter -->
+		<title>加贺顶针Pattern Designer</title>
+		<link href="normalize.css" rel="stylesheet" type="text/css">
+		<link href="all.css" rel="stylesheet" type="text/css">
+		<script src="analytics.js" type="text/javascript" ></script>
+		<script src="all.js" type="text/javascript"></script>
+	<!-- Favicons
+================================================================================================= -->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-precomposed-144x144.png">
+    <!--适用于 Retina 屏的 iPhone-->
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-precomposed-120x120.png">
+    <!--适用于非 Retina 屏的 iPad-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-precomposed-72x72.png">
+    <!--适用于非 Retina 屏的 iPhone-->
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed-57x57.png">
+
+<!-- JS
+================================================================================================= -->
+					
+
+	</head>
+	<body class="simulator" style="">
+		
+	<script type="text/javascript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','analytics.js','ga');
+			  ga('create', 'UA-50629803-11', 'auto');
+			  ga('send', 'pageview');
+		</script>
+		<div class="container">
+			<h3 class="">加贺顶针Pattern Designer <small><span id="appVersion">v0.8</span></small></h3>
+<link href="yubinuki.css" rel="stylesheet" type="text/css">
+			<div class="">
+				 
+				<div id="canvasContainer">
+					<canvas id="canvas" width="1140" height="130"></canvas>
+				</div>
+				<div id="yubinukiapp">
+					<div data-reactroot="">
+						
+						<div>
+							<div class="collapsedHead" id="storageHeading">
+								<h4><a data-toggle="collapse" href="#collapsedStorage" aria-expanded="true" aria-controls="collapsedStorage"><span class="glyphicon glyphicon-collapse-down"></span><!-- react-text: 7 -->保存和载入<!-- /react-text --></a></h4>
+							</div>
+							<div class="panel panel-default storage collapse in" id="collapsedStorage">
+								<div class="row panel-body">
+									<div class="col-xs-12 col-sm-4">
+										<select class="form-control">
+											<option value="slot01" selected="selected">01 - (NO DATA)</option>
+											<option value="slot02">02 - (NO DATA)</option>
+											<option value="slot03">03 - (NO DATA)</option>
+											<option value="slot04">04 - (NO DATA)</option>
+											<option value="slot05">05 - (NO DATA)</option>
+										</select>
+									</div>
+									<div class="col-xs-12 visible-xs-block vspace"></div>
+									<div class="col-xs-12 col-sm-8">
+										<button type="button" class="btn btn-light"><span class="glyphicon glyphicon-save"></span>
+											<!-- react-text: 21 -->保存...
+											<!-- /react-text -->
+										</button>
+										<button type="button" class="btn btn-light storageCmd"><span class="glyphicon glyphicon-open"></span>
+											<!-- react-text: 24 -->载入
+											<!-- /react-text -->
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>  
+		
+						<div>
+							<div>
+								<div class="collapsedHead" id="yubinukiConfHeading">
+									<h4><a data-toggle="collapse" href="#collapsedYubinukiConf" aria-expanded="true" aria-controls="collapsedYubinukiConf"><span class="glyphicon glyphicon-collapse-down"></span><!-- react-text: 31 -->基本设置 <!-- /react-text --></a></h4>
+								</div>
+								<div class="panel panel-default collapse in" role="tabpanel" aria-labelledby="yubinukiConfHeading" aria-expanded="true" id="collapsedYubinukiConf">
+									<div class="row yubinukiConfig form-inline panel-body">
+										<div class="form-group col-xs-6 col-sm-3 col-md-2">
+											<select class="form-control komaInput">
+												<option value="8" selected="selected">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+												<option value="32">32</option>
+											</select>
+											<label for="komaInput">格</label>
+										</div>
+										<div class="form-group col-xs-6 col-sm-3 col-md-2">
+											<select class="form-control tobiInput">
+												<option value="2" selected="selected">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+											</select>
+											<label for="tobiInput">跳</label>
+										</div>
+										<div class="radio-inline needleMode col-xs-12 col-sm-6 col-md-8">
+											<label class="">
+												<input type="radio" name="needleMode" value="SINGLE">
+												1组针线刺绣
+												
+											</label>
+											<label>
+												<input type="radio" name="needleMode" value="MULTIPLE" checked="checked">
+												2组针线刺绣
+												
+											</label>
+											<button class="btn btn-light cmdReset">恢复默认设置</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default komaItem">
+								<div class="panel-heading" role="tab" id="komaHeading_jw1nij3l">
+									<h4 id="-collapse-list-group-"><a data-toggle="collapse" href="#komaTab_jw1nij3l" aria-expanded="true" aria-controls="komaTab_jw1nij3l"><span class="glyphicon glyphicon-collapse-down"></span><!-- react-text: 85 -->组 [1]<!-- /react-text --></a><p class="btn-group komaCmd"><button type="button" class="btn btn-light moveCmd moveCmd-left" disabled="disabled"><span class="glyphicon glyphicon-chevron-up"></span></button><button type="button" class="btn btn-light moveCmd moveCmd-left" ><span class="glyphicon glyphicon-chevron-down" ></span></button></p></h4>
+								</div>
+								<div id="komaTab_jw1nij3l" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="komaHeading_jw1nij3l" aria-expanded="true">
+									<div class="panel-body row koma-panel-body">
+										<div class="col-xs-12 col-sm-5 col-md-6 form-horizontal">
+											<div class="form-group">
+												<label class="col-xs-4" for="offset_jw1nij3l">刺绣位置</label>
+												<div class="col-xs-8">
+													<select class="form-control" name="offset_jw1nij3l">
+														<option value="0" selected="selected">0</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="sasiType_jw1nij3l" class="col-xs-4">方向</label>
+												<div class="col-xs-8">
+													<label class="radio-inline">
+														<input type="radio" name="sasiType_jw1nij3l" value="NAMI" checked="checked">
+														<!-- react-text: 106 -->同向
+														<!-- /react-text -->
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="sasiType_jw1nij3l" value="HIRAKI">
+														<!-- react-text: 109 -->反向
+														<!-- /react-text -->
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<label >重叠</label>
+												<div class="col-xs-offset-4 col-xs-8">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="komaKagari_jw1nij3l" value="false">
+															<!-- react-text: 115 -->重叠
+															<!-- /react-text -->
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-6">
+											<div class="row">
+												<div class="col-xs-12">
+													<label>线条颜色和段数</label>
+													<button type="button" class="btn btn-light btn-addIto" name="addIto_jw1nij3l"><span class="glyphicon glyphicon-plus"></span>
+													</button>
+												</div>
+											</div>
+											<div class="col-xs-12 visible-xs-block vspace"></div>
+											<div id="ito_jw1niejk" class="row itoItem">
+												<div class="col-xs-12 col-sm-12">
+													<button type="button" class="btn btn-light" data-toggle="modal" data-target="#palletModal">
+														<div class="preview" style="background-color: gray;"></div>
+													</button>
+													<input type="text" class="colorInput" name="color_jw1nij3l_jw1niejk" value="gray" placeholder="色名">
+													<input type="text" class="roundsInput" name="rounds_jw1nij3l_jw1niejk" value="0">
+													<label for="rounds_jw1nij3l_jw1niejk">段</label>
+													<div id="heading_jw1niejk" class="itoCmd visible-xs-inline">
+														<button type="button" class="btn btn-light" data-toggle="collapse" href="#collapseCmd_jw1niejk" aria-expanded="false" aria-controls="collapseCmd_jw1niejk">・・・</button>
+													</div>
+													<div class="btn-group itoCmd hidden-xs">
+														<button type="button" class="btn btn-light" disabled="disabled">↑</button>
+														<button type="button" class="btn btn-light" disabled="disabled">↓</button>
+													</div>
+													<div class="btn-group itoCmd hidden-xs">
+														<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-minus"></span>
+														</button>
+													</div>
+													<div id="collapseCmd_jw1niejk" class="collapse" role="tabpanel" aria-labelledby="heading_jw1niejk" style="float: right;">
+														<div class="btn-group itoCmd">
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-chevron-up"></span>
+															</button>
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-chevron-down"></span>
+															</button>
+														</div>
+														<div class="btn-group itoCmd">
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-minus"></span>
+															</button>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default komaItem">
+								<div class="panel-heading" role="tab" id="komaHeading_jw1nigm0">
+									<h4 id="-collapse-list-group-"><a data-toggle="collapse" href="#komaTab_jw1nigm0" aria-expanded="true" aria-controls="komaTab_jw1nigm0"><span class="glyphicon glyphicon-collapse-down"></span><!-- react-text: 153 -->コマ [2]<!-- /react-text --></a><p class="btn-group komaCmd"><button type="button" class="btn btn-light moveCmd moveCmd-left"><span class="glyphicon glyphicon-chevron-up"></span></button><button type="button" class="btn btn-light moveCmd moveCmd-left" disabled="disabled"><span class="glyphicon glyphicon-chevron-down"></span></button></p></h4>
+								</div>
+								<div id="komaTab_jw1nigm0" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="komaHeading_jw1nigm0" aria-expanded="true">
+									<div class="panel-body row koma-panel-body">
+										<div class="col-xs-12 col-sm-5 col-md-6 form-horizontal">
+											<div class="form-group">
+												<label class="col-xs-4" for="offset_jw1nigm0">刺绣起始点</label>
+												<div class="col-xs-8">
+													<select class="form-control" name="offset_jw1nigm0">
+														<option value="0">0</option>
+														<option value="1" selected="selected">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="sasiType_jw1nigm0" class="col-xs-4">方向</label>
+												<div class="col-xs-8">
+													<label class="radio-inline">
+														<input type="radio" name="sasiType_jw1nigm0" value="NAMI" checked="checked">
+														<!-- react-text: 174 -->正向
+														<!-- /react-text -->
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="sasiType_jw1nigm0" value="HIRAKI">
+														<!-- react-text: 177 -->逆向
+														<!-- /react-text -->
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-xs-offset-4 col-xs-8">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="komaKagari_jw1nigm0" value="false">
+															<!-- react-text: 183 -->重叠
+															<!-- /react-text -->
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-6">
+											<div class="row">
+												<div class="col-xs-12">
+													<label>线色段数</label>
+													<button type="button" class="btn btn-light btn-addIto" name="addIto_jw1nigm0"><span class="glyphicon glyphicon-plus"></span>
+													</button>
+												</div>
+											</div>
+											<div class="col-xs-12 visible-xs-block vspace"></div>
+											<div id="ito_jw1nidk1" class="row itoItem">
+												<div class="col-xs-12 col-sm-12">
+													<button type="button" class="btn btn-light" data-toggle="modal" data-target="#palletModal">
+														<div class="preview" style="background-color: gray;"></div>
+													</button>
+													<input type="text" class="colorInput" name="color_jw1nigm0_jw1nidk1" value="gray" placeholder="色名">
+													<input type="text" class="roundsInput" name="rounds_jw1nigm0_jw1nidk1" value="0">
+													<label for="rounds_jw1nigm0_jw1nidk1">段</label>
+													<div id="heading_jw1nidk1" class="itoCmd visible-xs-inline">
+														<button type="button" class="btn btn-light" data-toggle="collapse" href="#collapseCmd_jw1nidk1" aria-expanded="false" aria-controls="collapseCmd_jw1nidk1">・・・</button>
+													</div>
+													<div class="btn-group itoCmd hidden-xs">
+														<button type="button" class="btn btn-light" disabled="disabled">↑</button>
+														<button type="button" class="btn btn-light" disabled="disabled">↓</button>
+													</div>
+													<div class="btn-group itoCmd hidden-xs">
+														<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-minus"></span>
+														</button>
+													</div>
+													<div id="collapseCmd_jw1nidk1" class="collapse" role="tabpanel" aria-labelledby="heading_jw1nidk1" style="float: right;">
+														<div class="btn-group itoCmd">
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-chevron-up"></span>
+															</button>
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-chevron-down"></span>
+															</button>
+														</div>
+														<div class="btn-group itoCmd">
+															<button type="button" class="btn btn-light" disabled="disabled"><span class="glyphicon glyphicon-minus"></span>
+															</button>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="palletModal" class="modal fade pallet" tabindex="-1" role="dialog" aria-labelledby="#palletModalLabel" style="display: none;" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title" id="palletModalLabel"><!-- react-text: 221 -->色彩选择<!-- /react-text --><small><span class="glyphicon glyphicon-info-sign"></span><!-- react-text: 434 -->指定了调色板中没有的颜色<!-- /react-text --></small></h4>
+										</div>
+										<div class="modal-body">
+											<div class="form-inline">
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_black" value="black">
+													<label for="color_black" class="previewFrame">
+														<div class="colorPreview" style="background-color: black;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_gray" value="gray">
+													<label for="color_gray" class="previewFrame">
+														<div class="colorPreview" style="background-color: gray;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkgray" value="darkgray">
+													<label for="color_darkgray" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkgray;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightgrey" value="lightgrey">
+													<label for="color_lightgrey" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightgrey;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_white" value="white">
+													<label for="color_white" class="previewFrame">
+														<div class="colorPreview" style="background-color: white;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_moccasin" value="moccasin">
+													<label for="color_moccasin" class="previewFrame">
+														<div class="colorPreview" style="background-color: moccasin;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_azure" value="azure">
+													<label for="color_azure" class="previewFrame">
+														<div class="colorPreview" style="background-color: azure;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lavender" value="lavender">
+													<label for="color_lavender" class="previewFrame">
+														<div class="colorPreview" style="background-color: lavender;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_royalblue" value="royalblue">
+													<label for="color_royalblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: royalblue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_midnightblue" value="midnightblue">
+													<label for="color_midnightblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: midnightblue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_mediumblue" value="mediumblue">
+													<label for="color_mediumblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: mediumblue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_blue" value="blue">
+													<label for="color_blue" class="previewFrame">
+														<div class="colorPreview" style="background-color: blue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightskyblue" value="lightskyblue">
+													<label for="color_lightskyblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightskyblue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightblue" value="lightblue">
+													<label for="color_lightblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightblue;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightcyan" value="lightcyan">
+													<label for="color_lightcyan" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightcyan;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_cyan" value="cyan">
+													<label for="color_cyan" class="previewFrame">
+														<div class="colorPreview" style="background-color: cyan;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_turquoise" value="turquoise">
+													<label for="color_turquoise" class="previewFrame">
+														<div class="colorPreview" style="background-color: turquoise;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightseagreen" value="lightseagreen">
+													<label for="color_lightseagreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightseagreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkcyan" value="darkcyan">
+													<label for="color_darkcyan" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkcyan;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkgreen" value="darkgreen">
+													<label for="color_darkgreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkgreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_green" value="green">
+													<label for="color_green" class="previewFrame">
+														<div class="colorPreview" style="background-color: green;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_forestgreen" value="forestgreen">
+													<label for="color_forestgreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: forestgreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkseagreen" value="darkseagreen">
+													<label for="color_darkseagreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkseagreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_palegreen" value="palegreen">
+													<label for="color_palegreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: palegreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightgreen" value="lightgreen">
+													<label for="color_lightgreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightgreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_yellowgreen" value="yellowgreen">
+													<label for="color_yellowgreen" class="previewFrame">
+														<div class="colorPreview" style="background-color: yellowgreen;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_olive" value="olive">
+													<label for="color_olive" class="previewFrame">
+														<div class="colorPreview" style="background-color: olive;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkkhaki" value="darkkhaki">
+													<label for="color_darkkhaki" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkkhaki;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_khaki" value="khaki">
+													<label for="color_khaki" class="previewFrame">
+														<div class="colorPreview" style="background-color: khaki;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_yellow" value="yellow">
+													<label for="color_yellow" class="previewFrame">
+														<div class="colorPreview" style="background-color: yellow;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_gold" value="gold">
+													<label for="color_gold" class="previewFrame">
+														<div class="colorPreview" style="background-color: gold;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_orange" value="orange">
+													<label for="color_orange" class="previewFrame">
+														<div class="colorPreview" style="background-color: orange;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkgoldenrod" value="darkgoldenrod">
+													<label for="color_darkgoldenrod" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkgoldenrod;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkred" value="darkred">
+													<label for="color_darkred" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkred;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_brown" value="brown">
+													<label for="color_brown" class="previewFrame">
+														<div class="colorPreview" style="background-color: brown;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightcoral" value="lightcoral">
+													<label for="color_lightcoral" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightcoral;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_coral" value="coral">
+													<label for="color_coral" class="previewFrame">
+														<div class="colorPreview" style="background-color: coral;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_orangered" value="orangered">
+													<label for="color_orangered" class="previewFrame">
+														<div class="colorPreview" style="background-color: orangered;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_red" value="red">
+													<label for="color_red" class="previewFrame">
+														<div class="colorPreview" style="background-color: red;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_crimson" value="crimson">
+													<label for="color_crimson" class="previewFrame">
+														<div class="colorPreview" style="background-color: crimson;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_hotpink" value="hotpink">
+													<label for="color_hotpink" class="previewFrame">
+														<div class="colorPreview" style="background-color: hotpink;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_pink" value="pink">
+													<label for="color_pink" class="previewFrame">
+														<div class="colorPreview" style="background-color: pink;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_lightpink" value="lightpink">
+													<label for="color_lightpink" class="previewFrame">
+														<div class="colorPreview" style="background-color: lightpink;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_magenta" value="magenta">
+													<label for="color_magenta" class="previewFrame">
+														<div class="colorPreview" style="background-color: magenta;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_plum" value="plum">
+													<label for="color_plum" class="previewFrame">
+														<div class="colorPreview" style="background-color: plum;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkviolet" value="darkviolet">
+													<label for="color_darkviolet" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkviolet;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_darkmagenta" value="darkmagenta">
+													<label for="color_darkmagenta" class="previewFrame">
+														<div class="colorPreview" style="background-color: darkmagenta;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_purple" value="purple">
+													<label for="color_purple" class="previewFrame">
+														<div class="colorPreview" style="background-color: purple;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_indigo" value="indigo">
+													<label for="color_indigo" class="previewFrame">
+														<div class="colorPreview" style="background-color: indigo;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_blueviolet" value="blueviolet">
+													<label for="color_blueviolet" class="previewFrame">
+														<div class="colorPreview" style="background-color: blueviolet;"></div>
+													</label>
+												</div>
+												<div class="form-check form-check-inline colorCell">
+													<input type="radio" class="color" name="paleltColor" id="color_mediumslateblue" value="mediumslateblue">
+													<label for="color_mediumslateblue" class="previewFrame">
+														<div class="colorPreview" style="background-color: mediumslateblue;"></div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-dismiss="modal">閉じる</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<script src="app.js" type="text/javascript"></script>
+				<div class="footer">
+					
+					<p class="note">(c) 2015 ichiko_revjune</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

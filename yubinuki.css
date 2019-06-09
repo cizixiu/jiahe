@@ -1,0 +1,110 @@
+<label for="sasiType_jw1nij3l" class="col-xs-4">方向</label><label for="sasiType_jw1nij3l" class="col-xs-4">方向</label><label for="sasiType_jw1nij3l" class="col-xs-4">方向</label>#yubinukiapp {
+	width:100%
+}
+#canvasContainer {
+	margin:15px 0px;
+	padding:0px;
+	height:130px
+}
+#canvasContainer #canvas {
+	margin:0px;
+	padding:0px;
+	height:132px;
+	border:solid 1px #A9915F
+}
+.clear {
+	clear:both
+}
+.vspace {
+	display:block;
+	margin-top:4px
+}
+.collapsedHead {
+	margin-bottom:8px
+}
+.storage .storageCmd {
+	margin-left:16px
+}
+.yubinukiConfig .tobiInput {
+	width:6em;
+	margin-right:0.5em;
+	display:inline
+}
+.yubinukiConfig .komaInput {
+	width:6em;
+	margin-right:0.5em;
+	display:inline
+}
+.yubinukiConfig .needleMode label {
+	margin-left:15px;
+	margin-top:5px;
+	width:90px
+}
+.yubinukiConfig .cmdReset {
+	float:right
+}
+.komaItem .komaCmd {
+	float:right;
+	margin-top:-5px;
+	margin-right:0px
+}
+.komaItem .koma-panel-body {
+	margin-top:16px
+}
+.komaItem .koma-panel-body .radio-inline {
+	padding-top:0px
+}
+.komaItem .koma-panel-body button.btn-addIto {
+	margin-left:16px
+}
+.itoItem .ito-col {
+	padding-top:4px
+}
+.itoItem .preview {
+	display:block;
+	width:24px;
+	height:24px;
+	border-radius:12px;
+}
+.itoItem .colorInput {
+	margin-left:4px;
+	width:8em
+}
+.itoItem .roundsInput {
+	text-align:right;
+	margin-left:10px;
+	margin-right:4px;
+	width:3em
+}
+.itoItem .itoCmd {
+	margin-left:10px
+}
+.pallet .colorCell {
+	display:inline-block;
+	margin:4px 4px 4px 4px;
+	padding:0px;
+	
+		
+}
+.pallet .colorCell input.color {
+	display: none
+}
+.pallet .colorCell .previewFrame {
+	margin:0px;
+	padding:0px;
+	width:40px;
+	height:40px
+}
+.pallet .colorCell .selected {
+	border:solid 2px #5F5F5F;
+	padding:0px;
+	border-radius:20px;
+}
+
+.pallet .colorCell .colorPreview {
+	display:inline-block;
+	width:36px;
+	height:36px;
+	border-radius:18px;
+		
+}
